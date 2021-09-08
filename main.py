@@ -233,6 +233,8 @@ def find_current_location(location_label):
 
 def render(current_location, score, moves):
 	if "name" in current_location and "cleanText" in current_location:
+ 		print("Score: " + str(score))
+  		print("Moves: " + str(moves))
 		print("You are at the " + str(current_location["name"]))
 		print(current_location["cleanText"] + "\n")
 
